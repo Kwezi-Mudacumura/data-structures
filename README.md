@@ -18,29 +18,45 @@
    <li><h3>at:</h3>The following function returns a reference to the ith(parameter) item in the list after checking that the index is not out of bounds.               </li>
    <li><h3>reallocate:</h3> This function reallocates the memory buffer to be "new_size"(parameter) length, using new Thing[new_size]By:<ul><li>1. Copying all items from the old buffer into the new one.</li>
  <li>2. Deleting the old buffer using delete[] </li>    </ul>                            </li>
+  
+  </ul>
+   
+  </p>  
+  </li>
+
+  
+  <li><h2>Linked list</h2><p>A linked list is a set of dynamically allocated nodes, arranged in such a way that each node contains one value and one pointer. The pointer always points to the next member of the list. If the pointer is nullptr, then it is the last node in the list.When I coded this program, I used the implementation of a linked list to create my own linked list with the following functions:
+  <ul>
+  <li><h3>operator*()</h3> This function returns a reference to the "thing" in the link that the linked list is pointing to.                                                                      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
     
   </ul>
-  
-  
-  
   </p>
-
-
-
-
-
-
-
-
-
-
-    
   </li>
-  <li>-Linked list</li>
   <li>-Circular array</li>
   <li>-Binary Search Tree</li>
 </ul>
