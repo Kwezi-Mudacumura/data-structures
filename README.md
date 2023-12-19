@@ -27,24 +27,49 @@
   
   <li><h2>Linked list</h2><p>A linked list is a set of dynamically allocated nodes, arranged in such a way that each node contains one value and one pointer. The pointer always points to the next member of the list. If the pointer is nullptr, then it is the last node in the list.When I coded this program, I used the implementation of a linked list to create my own linked list with the following functions:
   <ul>
-  <li><h3>operator*()</h3> This function returns a reference to the "thing" in the link that the linked list is pointing to.                                                                      </li>
+  <li><h3>operator*():</h3> This function returns a reference to the "thing" in the link that the linked list is pointing to.                                                                      </li>
+  <li><h3>operator++():</h3>This function makes the current iterator point to the next link in the list.
+ and returns a reference to this object.                                                 </li>
+ <li><h3>Constructor:</h3> The head is set to nullptr in the header file thus it is left empty. </li>
+ <li><h3>Destructor:</h3> This function frees every link in the list. </li>
+ <li><h3>Push_front:</h3> This function pushes t(parameter) to the front of the list.  </li>
+ <li><h3>Pop_front:</h3> This function removes the front item in the list. </li>
+ <li><h3>Push_back:</h3>This function adds t(parameter) to the back of the list. </li>
+ <li><h3>Pop_back:</h3>This function removes the last link in the list.  </li>
+ <li><h3>Size():</h3>This function returns the number of items in the list.                                               </li>
+ <li><h3>front():</h3>This function returns a reference to the first item in the list.  </li>
+ <li><h3>back():</h3>This function returns a reference to the last item in the list.       </li>
+ <li><h3>get_link:</h3>This function returns a pointer to the ith(parameter) link and it will throw std::out_of_range("i out of bounds") if i is out of bounds.                       </li>
+ <li><h3>at():</h3>This function returns a reference to the thing at index i(parameter) and it will throw std::out_of_range("i out of bounds") if i is out of bounds</li>
+ <li><h3>begin():</h3>This function returns a LinkedListIterator object referencing the first item.</li>
+ <li><h3>end():</h3>This function returns a LinkedListIterator representing one past the last item.                                         </li>
+ <li><h3>copy:</h3>This function returns a pointer to a copy of the list by:<ul>
+   <li>1.Allocating a new list on the heap</li> 
+   <li>2.Adding all the items to the list.</li>
+   </ul>
+ Please note:The copy of list is not allocated on the stack because it would be destroyed when the function ends.</li>
+ <li><h3>reverse:</h3>This function reverses the list by changing link pointers *only*(pointer arithemetic).</br>
+ Please note:it is expensive to copy Thing objects, then reversing the values would take a lot of time. Thus by only changing the link pointers, then it will always be fast no matter how big the thing objects are.This function takes O(n) time.</li>
+    
+  </ul>
+  </p>
+  </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  <li><h2>Circular array</h2>:
+    <p>
+  A circular array is a data structure that is used to represent a collection of data in a circular manner,where the end of the array is connected to the beginning.This allows for efficient access and manipulation of the data elements.In a circular array,when the end of the array is reached,the next element is considered to be the first element of the array.When I coded this program, I used the implementation of a circular array to create my own circular array with the following functions:
+  <ul>
+  <li><h3>Constructor:</h3> This function sets the values to its default values used throughout the rest of the program.       </li>
+  <li><h3>print:</h3> This function prints the objects stored in the array separated by commas, starting at the "front" of the circular array. The content is enclosed by square brackets.</br>
+ -The format is : [1,2,3,4]   </li>
+ <li><h3>size:</h3> This function returns the number of items actually stored in the array.</li>
+ <li><h3>allocated:</h3>This function returns the amount of space allocated - i.e. the number of Things that we actually stored in the current memory buffer.</li>
+ <li><h3>reallocate:</h3>This function allocates a new memory buffer that can store new_size number of Thing objects.</br>
+ Please note:<ul><li>the Thing at the "front" of the circular array is copied to data[0] in the new memory.</li>
+   <li>The old memory buffer is freed and all relevant variables is updated in the class.</li>
+   </ul>
+ </li>
 
 
 
@@ -55,9 +80,41 @@
 
     
   </ul>
-  </p>
+      
+    </p>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </li>
-  <li>-Circular array</li>
   <li>-Binary Search Tree</li>
 </ul>
 <p>Basically these programs are the background to how the data structures are created. <br>I didnt use said data structure to implement the data structure but other data structures and algorithms.
