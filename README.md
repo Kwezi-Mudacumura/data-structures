@@ -1,4 +1,4 @@
-<h1>Data structures coded in c++ :</h1></br>
+ <h1>Data structures coded in c++ :</h1></br>
 <ul>
   <li><h2>Vector</h2>
   <p>Vectors in C++ are sequence containers representing arrays that can change their size during runtime. They use contiguous storage locations for their elements just as efficiently as in arrays, which means that their elements can also be accessed using offsets on regular pointers to its elements.When I coded this program, I used the implementation of a vector to create my own vector with the following functions:
