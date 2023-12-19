@@ -56,7 +56,7 @@
   </li>
 
   
-  <li><h2>Circular array</h2>:
+  <li><h2>Circular array</h2>
     <p>
   A circular array is a data structure that is used to represent a collection of data in a circular manner,where the end of the array is connected to the beginning.This allows for efficient access and manipulation of the data elements.In a circular array,when the end of the array is reached,the next element is considered to be the first element of the array.When I coded this program, I used the implementation of a circular array to create my own circular array with the following functions:
   <ul>
@@ -70,52 +70,30 @@
    <li>The old memory buffer is freed and all relevant variables is updated in the class.</li>
    </ul>
  </li>
-
-
-
-
-
-
-
-
-    
-  </ul>
-      
-    </p>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+ <li><h3>push_front</h3> This function pushes Thing t(parameter) to the front of the circular array. If the array is full, then the function first reallocates the memory buffer with twice the size.If there is no memory allocated, the function then reallocate(1) </li>
+   
+ <li><h3>push_back:</h3>This function pushes Thing t(parameter) to the back of the circular array.If the array is full, the funcction first reallocates the memory buffer with twice the size.If the array is empty (n_items == 0), then the function places the item(parameter) at data[0].If there is no memory allocated, then the function reallocate(1) . </li>
+ <li><h3>pop_front:</h3>This function pops the object from the "front" of the circular array.The actual Thing(parameter) isnt deleted rather it is marked as deleted by setting its value to -1 eg) data[something].value = -1.If the number of items in the array is < n_allocated/4.0 then this function reallocates with half the allocated space.</li>
+ <li><h3>pop_back:</h3>This function pops the object from the "back" of the circular array.The actual Thing(parameter) isnt deleted rather it is marked as deleted by setting its value to -1 eg) data[something].value = -1.If the number of items in the array is < n_allocated/4.0 then this function reallocates with half the allocated space.
+ </li>
+ <li><h3>operator[]:</h3>This function returns the Thing(parameter) object that is index units from the "front". </li>
+ <li><h3>destructor:</h3>This function deletes data[].              </li>
+   
+  </ul>  
+   </p>
   </li>
-  <li>-Binary Search Tree</li>
+
+  
+  <li><h2>Binary Search Tree</h2></li>
+  <p>
+  Binary Search Tree is a node-based binary tree data structure which has the following properties:<ul>
+
+<li>The left subtree of a node contains only nodes with keys lesser than the node’s key.</li>
+<li>The right subtree of a node contains only nodes with keys greater than the node’s key.</li>
+<li>The left and right subtree each must also be a binary search tree.</li>
+</ul>
+
+  </p>
 </ul>
 <p>Basically these programs are the background to how the data structures are created. <br>I didnt use said data structure to implement the data structure but other data structures and algorithms.
 </br>The code also takes into account the time complexity for the best compilation time. </br> Please note that the code is in c++ 11.</p>
