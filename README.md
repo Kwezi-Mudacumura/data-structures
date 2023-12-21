@@ -92,6 +92,24 @@
 <li>The right subtree of a node contains only nodes with keys greater than the node’s key.</li>
 <li>The left and right subtree each must also be a binary search tree.</li>
 </ul>
+<ul>
+<li><h3>InOrderTraversal</h3>
+At first this following function traverses left subtree then visits the root and then traverses the right subtree.
+By using the following steps to implement this idea:<ul>
+<li>Traverse left subtree</li>
+<li>Visit the root and print the data.</li>
+<li>Traverse the right subtree</li>
+</ul>
+The inorder traversal of the BST gives the values of the nodes in sorted order.</br>Note: To get the decreasing order the function would visit the right, root, and left subtree.
+
+ 
+</li>
+
+
+
+
+ 
+</ul>
 
   </p>
 </ul>
