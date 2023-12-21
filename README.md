@@ -94,7 +94,7 @@
 </ul>
 <ul>
 <li><h3>InOrderTraversal</h3>
-At first this following function traverses left subtree then visits the root and then traverses the right subtree.
+This function traverses left subtree then visits the root and then traverses the right subtree.</br>
 By using the following steps to implement this idea:<ul>
 <li>Traverse left subtree</li>
 <li>Visit the root and print the data.</li>
@@ -104,7 +104,63 @@ The inorder traversal of the BST gives the values of the nodes in sorted order.<
 
  
 </li>
+<li><h3>PreorderTraversal</h3>
+This function visits the root then traverses left subtree and then traverses the right subtree.</br>
+By following the below steps to implement this idea:
+<ul>
+<li>Visit the root and print the data.</li>
+<li>Traverse left subtree</li>
+<li>Traverse the right subtree</li>
+</ul>
+</li>
+<li><h3>PostOrderTraversal</h3>
+This function traverses left subtree then traverses the right subtree and then visits the root.</br>
+By following the below steps to implement this idea:
+<ul>
+<li>Traverse left subtree</li>
+<li>Traverse the right subtree</li>
+<li>Visit the root and print the data.</li>
+</ul>
+</li>
+<li><h3>min</h3>The basic idea behind this function is to exploit the properties of a Binary Search Tree (BST). In a BST, the left subtree of a node contains all the nodes with values less than the node's value, and the right subtree contains all the nodes with values greater than the node's value.</br>
+This function follows the below steps to implement the above idea:
+<ul>
+<li>Start at the root node of the BST.</li>
+<li>If the left child of the current node is NULL, return the value of the current node. This is the minimum element in the BST.</li>
+<li>If the value of the left child is less than the value of the current node, move to the left subtree and repeat step 2.</li>
+<li>If the value of the left child is greater than or equal to the value of the current node, move to the right subtree and repeat step 2.</li>
+<li>Repeat steps 2-4 until you reach a leaf node.</li>
+</ul>
 
+</li>
+<li><h3>maximum</h3>Given a Binary Search Tree, the task is to find the node with the maximum value in a BST.
+Approach: This function just traverses the node from root to right recursively until the right is NULL. The node whose right is NULL is the node with the maximum value. 
+</li>
+<li><h3>Contains</h3>
+Let’s say we want to search for the number X, The function starts at the root. Then:<ul>
+<li>The function compares the value to be searched with the value of the root.</li>
+<li>If it’s equal the function is done with the search if it’s smaller the function goes to the left subtree because in a binary search tree all the elements in the left subtree are smaller and all the elements in the right subtree are larger. </li>
+<li>It repeats the above step till no more traversal is possible</li>
+<li>>If at any iteration, key is found, The function(type bool)returns True. Else it returns False.</li>
+</ul>
+
+</li>
+<li><h3>Remove</h3>
+Given a BST, the task is to delete a node in this BST, which is broken down into 3 scenarios:
+<ul>
+<li>Case 1.The function deletes a Leaf Node in BST</li>
+
+<li>Case 2.The function deletes a Node with Single Child in BST by copying the child to the node and deleting the node. </li>
+
+
+<li>Case 3.The function deletes a Node with Both Children in BST.Here the function has to delete the node in such a way, that the resulting tree follows the properties of a BST.</li>  
+
+
+
+
+
+</ul>
+</li>
 
 
 
